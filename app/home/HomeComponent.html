@@ -1,0 +1,16 @@
+<div>
+
+    <button (click)="call()">Click me</button>
+
+    @if(this.anotherField)
+        <div>This is a true content</div>
+    @endif
+
+    @if(!this.anotherField)
+        <div>Anotehr field is false</div>
+    @endif
+
+    @for(dados in this.personData)
+        <div>{dados.name}</div>
+    @endfor
+</div>
